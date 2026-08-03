@@ -3,7 +3,13 @@
 A one-page static site for **Ox Mode** — "a bounded season in which unused strength
 accepts a rightful purpose."
 
-Live: https://ox-mode.com  (Netlify project `oxmode` → https://oxmode.netlify.app)
+Live: **https://ox-mode.com** (`www` 301s to the apex)
+
+DNS is **Netlify DNS** — the zone was delegated off Porkbun's own nameservers on
+2026-08-03 because Porkbun's servers let the default `*` parking wildcard shadow an
+explicit `www` CNAME. Porkbun email forwarding was carried across with the zone
+(MX `fwd1`/`fwd2.porkbun.com` + the SPF TXT); don't drop those records.
+Netlify project: `oxmode` → https://oxmode.netlify.app
 
 ## Provenance
 
