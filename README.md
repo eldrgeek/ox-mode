@@ -3,7 +3,7 @@
 A one-page static site for **Ox Mode** — "a bounded season in which unused strength
 accepts a rightful purpose."
 
-Live: https://oxmode.netlify.app
+Live: https://ox-mode.com  (Netlify project `oxmode` → https://oxmode.netlify.app)
 
 ## Provenance
 
@@ -16,7 +16,7 @@ the diff of everything since is exactly what the estate changed.
 
 | Change | Why |
 |---|---|
-| `og:url` / `og:image` / `twitter:image` pointed at `http://localhost:3000` | Every social share would have resolved to nothing. Now absolute, on the live origin. |
+| `og:url` / `og:image` / `twitter:image` pointed at `http://localhost:3000` | Every social share would have resolved to nothing. Now absolute on `https://ox-mode.com`. |
 | Hero + OG image were a single 3.8 MB PNG | The hero is the LCP element. Added `og.webp` (517 KB, q85) for the page and `og.jpg` (768 KB) for social scrapers, which don't reliably take WebP. Verified visually identical at 1:1 crop. Master PNG retained as `og.png`. |
 | No `width`/`height` on the hero `<img>` | Layout shift. Now `1536×1024` with `fetchpriority="high"`. |
 | No favicon | SOMA-APP-STANDARD §13. `favicon.svg` + `apple-touch-icon.png`, drawn from the site's own wordmark (`#8d2f25` on `#f2eadb`). |
